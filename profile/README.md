@@ -59,34 +59,47 @@ Plugin para AutoCAD orientado a layout industrial.
 
 ---
 
-## Ecosistema Megiddo Source
-
-```mermaid
-flowchart LR
-
-A[AutoCAD Layout] --> B[GLUKO]
-B --> C[CadXportData]
-C --> D[FORGE]
-D --> E[Producción / Taller]
-
-style A fill:#1f2937,color:#fff
-style B fill:#16a34a,color:#fff
-style C fill:#2563eb,color:#fff
-style D fill:#ea580c,color:#fff
-style E fill:#444,color:#fff
-```
-
 # Arquitectura del sistema
 
 ```mermaid
 flowchart LR
 
-A[CAD / CADXportData] --> B[BOM Máquina]
-B --> C[Forge]
-C --> D[Planificación Gantt]
-C --> E[Modo Taller]
-E --> F[Producción]
-C --> G[Generación de PDF]
+subgraph CAD
+A[AutoCAD]
+B[GLUKO Plugin]
+end
+
+subgraph Datos
+C[CadXportData]
+D[BOM / Materiales]
+E[Documentación PDF / DWG / DXF]
+end
+
+subgraph Planificacion
+F[FORGE]
+G[Planificación Gantt]
+H[Gestión de tareas]
+end
+
+subgraph Produccion
+I[Modo Taller]
+J[Producción]
+end
+
+A --> B
+B --> C
+C --> D
+C --> E
+D --> F
+F --> G
+F --> H
+H --> I
+I --> J
+
+style B fill:#16a34a,color:#fff
+style C fill:#2563eb,color:#fff
+style F fill:#ea580c,color:#fff
+style J fill:#444,color:#fff
 ```
 
 ---
