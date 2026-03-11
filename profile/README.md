@@ -64,42 +64,70 @@ Plugin para AutoCAD orientado a layout industrial.
 ```mermaid
 flowchart LR
 
-subgraph CAD
+subgraph CAD_LAYOUT
 A[AutoCAD]
 B[GLUKO Plugin]
+C[Exportación tabla de layout]
 end
 
-subgraph Datos
-C[CadXportData]
-D[BOM / Materiales]
-E[Documentación PDF / DWG / DXF]
+subgraph CAD_MECANICO
+D[Diseño máquina<br/>Solid Edge / CAD mecánico]
+E[Extracción BOM]
 end
 
-subgraph Planificacion
-F[FORGE]
-G[Planificación Gantt]
-H[Gestión de tareas]
+subgraph DATOS_FABRICACION
+F[CadXportData]
+G[BOM / Materiales]
+H[Pedidos BOM]
+I[Documentación técnica<br/>PDF / DWG / DXF / STEP]
+J[Procesos fabricación<br/>Laser / Corte / Plegado]
 end
 
-subgraph Produccion
-I[Modo Taller]
-J[Producción]
+subgraph PLANIFICACION
+K[FORGE]
+L[Planificación Gantt]
+M[Gestión de tareas]
+end
+
+subgraph PRODUCCION
+N[Modo Taller]
+O[Producción]
 end
 
 A --> B
 B --> C
+
+%% flujo diseño mecánico
 C --> D
-C --> E
-D --> F
+D --> E
+E --> F
+
+%% flujo proyecto cliente directo
+C --> K
+
+%% gestión datos técnicos
 F --> G
 F --> H
-H --> I
-I --> J
+F --> I
+F --> J
+
+%% entrada planificación
+G --> K
+H --> K
+J --> K
+
+%% planificación
+K --> L
+K --> M
+
+%% producción
+M --> N
+N --> O
 
 style B fill:#16a34a,color:#fff
-style C fill:#2563eb,color:#fff
-style F fill:#ea580c,color:#fff
-style J fill:#444,color:#fff
+style F fill:#2563eb,color:#fff
+style K fill:#ea580c,color:#fff
+style O fill:#444,color:#fff
 ```
 
 ---
