@@ -1,43 +1,74 @@
 # Megiddo Source
 <img width="1536" height="341" alt="Megido_source_banner" src="https://github.com/user-attachments/assets/90acb32a-8cd8-450b-8013-e26cbd57ff66" />
 
+
+[![Forge](https://img.shields.io/badge/FORGE-Industrial%20Planning-orange?style=for-the-badge)](https://github.com/Megiddo-Source/Forge)
+[![CadXportData](https://img.shields.io/badge/CADXPORTDATA-BOM%20%7C%20Manufacturing-blue?style=for-the-badge)](https://github.com/Megiddo-Source/CadXportData)
+[![GLUKO](https://img.shields.io/badge/GLUKO-AutoCAD%20Layout-green?style=for-the-badge)](https://github.com/Megiddo-Source/GLUKO)
+
+
 Industrial engineering software ecosystem.
 
 Megiddo Source desarrolla herramientas para automatizar el flujo técnico entre **CAD, planificación, producción y documentación industrial**.
 
 ---
 
+```markdown
+## Suite de software
+
+### FORGE
+Planificación industrial basada en tareas, dependencias y gestión de proyectos de fabricación.
+
+### CADXPORTDATA
+Gestión de BOM, documentación técnica (PDF / DWG / DXF / STEP) y coordinación entre ingeniería y producción.
+
+### GLUKO
+Plugin para AutoCAD orientado a ingeniería de layout industrial y generación automática de tablas técnicas.
+```
+---
 ## Aplicaciones
+
 
 ### FORGE
 Planificación industrial basada en tareas y dependencias.
 
-https://github.com/Megiddo-Source/Forge
+[![Forge](https://img.shields.io/badge/FORGE-Industrial%20Planning-orange?style=for-the-badge)](https://github.com/Megiddo-Source/Forge)
 
 ---
+
 
 ### CADXPORTDATA
 Gestión de datos técnicos, BOM y documentación de fabricación.
 
-https://github.com/Megiddo-Source/CadXportData_Tools
+[![CadXportData](https://img.shields.io/badge/CADXPORTDATA-BOM%20%7C%20Manufacturing-blue?style=for-the-badge)](https://github.com/Megiddo-Source/CadXportData)
 
 ---
 
 ### GLUKO
 Plugin para AutoCAD orientado a layout industrial.
 
-https://github.com/Megiddo-Source/GLUKO
+[![GLUKO](https://img.shields.io/badge/GLUKO-AutoCAD%20Layout-green?style=for-the-badge)](https://github.com/Megiddo-Source/GLUKO)
+
 
 ---
 
-## Ecosistema
+## Ecosistema Megiddo Source
 
-CAD Layout → GLUKO  
-BOM / Datos → CadXportData  
-Planificación → FORGE  
+```mermaid
+flowchart LR
 
+A[AutoCAD Layout] --> B[GLUKO]
+B --> C[CadXportData]
+C --> D[FORGE]
+D --> E[Producción / Taller]
+
+style A fill:#1f2937,color:#fff
+style B fill:#16a34a,color:#fff
+style C fill:#2563eb,color:#fff
+style D fill:#ea580c,color:#fff
+style E fill:#444,color:#fff
+```
 ---
-
 ## Estado
 
 Proyecto en desarrollo activo.
