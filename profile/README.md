@@ -75,11 +75,37 @@ style C fill:#2563eb,color:#fff
 style D fill:#ea580c,color:#fff
 style E fill:#444,color:#fff
 ```
+
+# Arquitectura del sistema
+
+```mermaid
+flowchart LR
+
+A[CAD / CADXportData] --> B[BOM Máquina]
+B --> C[Forge]
+C --> D[Planificación Gantt]
+C --> E[Modo Taller]
+E --> F[Producción]
+C --> G[Generación de PDF]
+```
+
 ---
-## Estado
+
+# Filosofía
+
+Reducir trabajo manual en ingeniería industrial mediante herramientas que conectan:
+
+```
+CAD → Datos → Planificación → Producción
+```
+
+---
+
+# Estado
 
 Proyecto en desarrollo activo.
 ---
 
-<img width="150" height="175" alt="Logo industrial en tonos metálicos" src="https://github.com/user-attachments/assets/58b1afd2-8a62-4484-ac9c-0475e69ec54b" />
+<img width="100" height="100" alt="megiddo_watermark" src="https://github.com/user-attachments/assets/6f1bd1b5-5068-4a0c-a194-d409b2194700" />
 
+---
