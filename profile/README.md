@@ -79,6 +79,7 @@ style E fill:#444,color:#fff
 ## Estado
 
 Proyecto en desarrollo activo.
+---
 
 <img width="150" height="175" alt="Logo industrial en tonos metálicos" src="https://github.com/user-attachments/assets/58b1afd2-8a62-4484-ac9c-0475e69ec54b" />
 
