@@ -2,6 +2,12 @@
 <img width="1536" height="341" alt="Megido_source_banner" src="https://github.com/user-attachments/assets/90acb32a-8cd8-450b-8013-e26cbd57ff66" />
 
 
+![platform](https://img.shields.io/badge/platform-Windows-lightgrey)
+![cad](https://img.shields.io/badge/CAD-AutoCAD-blue)
+![workflow](https://img.shields.io/badge/workflow-Industrial%20Engineering-darkgreen)
+![brand](https://img.shields.io/badge/by-Megiddo%20Source-black)
+
+---
 [![Forge](https://img.shields.io/badge/FORGE-Industrial%20Planning-orange?style=for-the-badge)](https://github.com/Megiddo-Source/Forge)
 [![CadXportData](https://img.shields.io/badge/CADXPORTDATA-BOM%20%7C%20Manufacturing-blue?style=for-the-badge)](https://github.com/Megiddo-Source/CadXportData)
 [![GLUKO](https://img.shields.io/badge/GLUKO-AutoCAD%20Layout-green?style=for-the-badge)](https://github.com/Megiddo-Source/GLUKO)
@@ -10,6 +16,7 @@
 Industrial engineering software ecosystem.
 
 Megiddo Source desarrolla herramientas para automatizar el flujo técnico entre **CAD, planificación, producción y documentación industrial**.
+
 
 ---
 
