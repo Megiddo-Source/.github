@@ -1,152 +1,245 @@
-# Megiddo Source
-<img width="1536" height="341" alt="Megido_source_banner" src="https://github.com/user-attachments/assets/90acb32a-8cd8-450b-8013-e26cbd57ff66" />
+<div align="center">
 
+# MEGIDDO SOURCE
 
-![platform](https://img.shields.io/badge/platform-Windows-lightgrey)
-![cad](https://img.shields.io/badge/CAD-AutoCAD-blue)
-![workflow](https://img.shields.io/badge/workflow-Industrial%20Engineering-darkgreen)
-![brand](https://img.shields.io/badge/by-Megiddo%20Source-black)
+<img
+  width="1536"
+  height="341"
+  alt="Megiddo Source banner"
+  src="https://github.com/user-attachments/assets/90acb32a-8cd8-450b-8013-e26cbd57ff66"
+/>
+
+### Software especializado para trabajar, crear y automatizar en local.
+
+Megiddo Source desarrolla proyectos de software centrados en productividad,  
+IA local, automatización, herramientas CAD y entornos industriales.
+
+[Sitio web](https://megiddosource.netlify.app/)
+·
+[Proyectos](https://megiddosource.netlify.app/apps/)
+·
+[Nexus ERP Industrial](https://megiddosource.netlify.app/ecosystem.html)
+·
+[Distribución](https://megiddosource.netlify.app/downloads.html)
+
+</div>
 
 ---
-[![Forge](https://img.shields.io/badge/FORGE-Industrial%20Planning-orange?style=for-the-badge)](https://github.com/Megiddo-Source/Forge)
-[![CadXportData](https://img.shields.io/badge/CADXPORTDATA-BOM%20%7C%20Manufacturing-blue?style=for-the-badge)](https://github.com/Megiddo-Source/CadXportData)
-[![GLUKO](https://img.shields.io/badge/GLUKO-AutoCAD%20Layout-green?style=for-the-badge)](https://github.com/Megiddo-Source/GLUKO)
 
+![Local software](https://img.shields.io/badge/software-local-111827)
+![Local AI](https://img.shields.io/badge/AI-local-2563eb)
+![Automation](https://img.shields.io/badge/focus-automation-d97706)
+![Industrial tools](https://img.shields.io/badge/tools-industrial-166534)
+![Megiddo Source](https://img.shields.io/badge/by-Megiddo%20Source-black)
 
-Industrial engineering software ecosystem.
+## Sobre Megiddo Source
 
-Megiddo Source desarrolla herramientas para automatizar el flujo técnico entre **CAD, planificación, producción y documentación industrial**.
+Megiddo Source es una iniciativa independiente de desarrollo de software.
 
+Los proyectos se crean para resolver problemas concretos y pueden adoptar distintas formas:
+
+- aplicaciones de escritorio;
+- aplicaciones móviles;
+- herramientas de IA local;
+- extensiones de navegador;
+- utilidades técnicas;
+- proyectos industriales;
+- prototipos e investigación.
+
+La mayoría de los proyectos funcionan de manera independiente.
+
+Actualmente, **Nexus ERP Industrial** es el único ecosistema formal en desarrollo dentro de Megiddo Source.
 
 ---
 
-```markdown
-## Suite de software
+# Nexus ERP Industrial
 
-### FORGE
-Planificación industrial basada en tareas, dependencias y gestión de proyectos de fabricación.
+Nexus ERP Industrial es una plataforma industrial en desarrollo para conectar progresivamente:
 
-### CADXPORTDATA
-Gestión de BOM, documentación técnica (PDF / DWG / DXF / STEP) y coordinación entre ingeniería y producción.
-
-### GLUKO
-Plugin para AutoCAD orientado a ingeniería de layout industrial y generación automática de tablas técnicas.
+```text
+CAD → Datos técnicos → Planificación → Producción
 ```
----
-## Aplicaciones
 
+Está formada actualmente por tres proyectos principales:
 
-### FORGE
-Planificación industrial basada en tareas y dependencias.
+## CadXportData
 
-[![Forge](https://img.shields.io/badge/FORGE-Industrial%20Planning-orange?style=for-the-badge)](https://github.com/Megiddo-Source/Forge)
+Automatización de BOM, documentación técnica, archivos CAD y datos de fabricación.
 
----
+[![CadXportData](https://img.shields.io/badge/CadXportData-BOM%20%7C%20Manufacturing-2563eb?style=for-the-badge)](https://github.com/Megiddo-Source/CadXportData)
 
+## Forge
 
-### CADXPORTDATA
-Gestión de datos técnicos, BOM y documentación de fabricación.
+Planificación de proyectos industriales, tareas, dependencias y seguimiento de producción.
 
-[![CadXportData](https://img.shields.io/badge/CADXPORTDATA-BOM%20%7C%20Manufacturing-blue?style=for-the-badge)](https://github.com/Megiddo-Source/CadXportData)
+[![Forge](https://img.shields.io/badge/Forge-Industrial%20Planning-ea580c?style=for-the-badge)](https://github.com/Megiddo-Source/Forge)
 
----
+## GLUKO
 
-### GLUKO
-Plugin para AutoCAD orientado a layout industrial.
+Herramientas para AutoCAD orientadas a bloques, atributos, tablas y automatización de layouts industriales.
 
-[![GLUKO](https://img.shields.io/badge/GLUKO-AutoCAD%20Layout-green?style=for-the-badge)](https://github.com/Megiddo-Source/GLUKO)
+[![GLUKO](https://img.shields.io/badge/GLUKO-AutoCAD%20Automation-16a34a?style=for-the-badge)](https://github.com/Megiddo-Source/GLUKO)
 
+> Los tres proyectos pueden funcionar de forma independiente mientras avanza la integración progresiva de Nexus ERP Industrial.
 
 ---
 
-# Arquitectura del sistema
+## Arquitectura prevista de Nexus ERP Industrial
 
 ```mermaid
 flowchart LR
 
-subgraph CAD_LAYOUT
-A[AutoCAD]
-B[GLUKO Plugin]
-C[Exportación tabla de layout]
+subgraph CAD_LAYOUT["Diseño de layout"]
+    A[AutoCAD]
+    B[GLUKO]
+    C[Datos y tablas de layout]
 end
 
-subgraph CAD_MECANICO
-D[Diseño máquina<br/>Solid Edge / CAD mecánico]
-E[Extracción BOM]
+subgraph CAD_MECANICO["Ingeniería mecánica"]
+    D[Solid Edge / CAD mecánico]
+    E[BOM y documentación]
 end
 
-subgraph DATOS_FABRICACION
-F[CadXportData]
-G[BOM / Materiales]
-H[Pedidos BOM]
-I[Documentación técnica<br/>PDF / DWG / DXF / STEP]
-J[Procesos fabricación<br/>Laser / Corte / Plegado]
+subgraph DATOS["Datos de fabricación"]
+    F[CadXportData]
+    G[BOM y materiales]
+    H[Pedidos]
+    I[PDF / DWG / DXF / STEP]
+    J[Procesos de fabricación]
 end
 
-subgraph PLANIFICACION
-K[FORGE]
-L[Planificación Gantt]
-M[Gestión de tareas]
+subgraph PLANIFICACION["Planificación"]
+    K[Forge]
+    L[Planificación Gantt]
+    M[Tareas y seguimiento]
 end
 
-subgraph PRODUCCION
-N[Modo Taller]
-O[Producción]
+subgraph OBJETIVO["Objetivo progresivo"]
+    N[Nexus ERP Industrial]
+    O[Producción y modo taller]
 end
 
 A --> B
 B --> C
 
-%% flujo diseño mecánico
 C --> D
 D --> E
 E --> F
 
-%% flujo proyecto cliente directo
-C --> K
-
-%% gestión datos técnicos
 F --> G
 F --> H
 F --> I
 F --> J
 
-%% entrada planificación
-G --> K
-H --> K
-J --> K
+G -. integración .-> K
+H -. integración .-> K
+J -. integración .-> K
+C -. integración .-> K
 
-%% planificación
 K --> L
 K --> M
 
-%% producción
-M --> N
-N --> O
+M -. integración futura .-> N
+N -.-> O
 
 style B fill:#16a34a,color:#fff
 style F fill:#2563eb,color:#fff
 style K fill:#ea580c,color:#fff
-style O fill:#444,color:#fff
+style N fill:#7c5c24,color:#fff
 ```
 
----
+### Leyenda
 
-# Filosofía
-
-Reducir trabajo manual en ingeniería industrial mediante herramientas que conectan:
-
-```
-CAD → Datos → Planificación → Producción
-```
+- Línea continua: flujo o capacidad actual.
+- Línea discontinua: integración progresiva o prevista.
+- Nexus ERP Industrial: objetivo de plataforma conjunta.
 
 ---
 
-# Estado
+# Otros proyectos
 
-Proyecto en desarrollo activo.
+Megiddo Source también desarrolla aplicaciones y herramientas independientes relacionadas con:
+
+- IA local;
+- productividad personal;
+- desarrollo asistido;
+- visualización CAD;
+- automatización de navegador;
+- doblaje y traducción local;
+- generación multimedia;
+- experiencias narrativas.
+
+El catálogo público, el estado y la distribución de cada proyecto se mantienen en el sitio web:
+
+[Explorar todos los proyectos](https://megiddosource.netlify.app/apps/)
+
+No todos los proyectos disponen de repositorio público.
+
 ---
 
-<img width="100" height="100" alt="megiddo_watermark" src="https://github.com/user-attachments/assets/6f1bd1b5-5068-4a0c-a194-d409b2194700" />
+# Filosofía de desarrollo
+
+Megiddo Source prioriza:
+
+- software especializado frente a aplicaciones genéricas;
+- procesamiento local cuando resulta viable;
+- control del usuario sobre sus datos;
+- automatización de trabajos repetitivos;
+- aplicaciones independientes y modulares;
+- integración únicamente cuando aporta un valor real;
+- transparencia sobre el estado de desarrollo.
+
+Compartir autor, tecnologías o filosofía no convierte automáticamente varios proyectos en un ecosistema.
 
 ---
+
+# Estado de los proyectos
+
+Los proyectos pueden encontrarse en diferentes etapas:
+
+| Estado | Significado |
+|---|---|
+| Concepto | Dirección inicial definida |
+| Investigación | Validación técnica o funcional |
+| Prototipo | Implementación experimental |
+| Preview | Funcionalidad utilizable todavía en evolución |
+| Beta | Proyecto funcional en validación |
+| Disponible | Publicación pública utilizable |
+| Mantenimiento | Desarrollo centrado en estabilidad y correcciones |
+
+Consulta la ficha de cada proyecto para conocer su estado real.
+
+---
+
+# Distribución
+
+Megiddo Source no utiliza GitHub como única vía de distribución.
+
+Según el proyecto, las publicaciones pueden encontrarse en:
+
+- GitHub Releases;
+- Gumroad;
+- Chrome Web Store;
+- Microsoft Edge Add-ons;
+- Google Play;
+- Autodesk App Store;
+- otros distribuidores indicados en la web oficial.
+
+[Consultar distribución oficial](https://megiddosource.netlify.app/downloads.html)
+
+---
+
+<div align="center">
+
+<img
+  width="100"
+  height="100"
+  alt="Megiddo Source watermark"
+  src="https://github.com/user-attachments/assets/6f1bd1b5-5068-4a0c-a194-d409b2194700"
+/>
+
+**Megiddo Source**
+
+Software especializado. Automatización práctica. Control local.
+
+</div>
