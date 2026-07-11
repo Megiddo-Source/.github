@@ -9,7 +9,8 @@
   src="https://github.com/user-attachments/assets/90acb32a-8cd8-450b-8013-e26cbd57ff66"
 />
 
-### Specialized software for productivity, local AI, automation, and industrial engineering.
+### Building practical software for real-world workflows..
+Independent projects for local AI, productivity, automation, CAD, and industrial engineering.
 
 Megiddo Source develops independent software projects focused on local-first computing,
 technical productivity, automation, CAD workflows, and industrial solutions.
@@ -21,7 +22,7 @@ technical productivity, automation, CAD workflows, and industrial solutions.
 [![Website](https://img.shields.io/badge/Website-Megiddo%20Source-gold?style=for-the-badge)](https://megiddosource.netlify.app)
 [![Projects](https://img.shields.io/badge/Projects-Catalog-blue?style=for-the-badge)](https://megiddosource.netlify.app/apps/)
 [![Nexus ERP](https://img.shields.io/badge/Nexus-ERP%20Industrial-orange?style=for-the-badge)](https://megiddosource.netlify.app/ecosystem.html)
-[![Downloads](https://img.shields.io/badge/Downloads-Official-green?style=for-the-badge)](https://megiddosource.netlify.app/downloads.html)
+[![Distribution](https://img.shields.io/badge/Downloads-Official-green?style=for-the-badge)](https://megiddosource.netlify.app/downloads.html)
 
 [![Gumroad](https://img.shields.io/badge/Gumroad-Support%20Projects-ff90e8?style=for-the-badge)](https://megiddosource.gumroad.com/)
 [![Reddit](https://img.shields.io/badge/Reddit-Community-ff4500?style=for-the-badge)](https://www.reddit.com/user/MegiddoSource/)
@@ -219,15 +220,17 @@ Sharing the same author or technology does not automatically make separate proje
 
 Projects may be found in different development stages:
 
-| Status | Description |
-|---------|-------------|
-| Concept | Initial direction defined |
-| Research | Technical validation |
-| Prototype | Experimental implementation |
-| Preview | Usable but evolving |
-| Beta | Feature-complete with ongoing validation |
-| Stable | Publicly available |
-| Maintenance | Stability improvements and bug fixes |
+| Status      | Meaning                                |
+| ----------- | -------------------------------------- |
+| Concept     | Initial direction defined              |
+| Research    | Technical or product exploration       |
+| Prototype   | Experimental functional implementation |
+| Preview     | Usable project still evolving          |
+| Beta        | Functional project under validation    |
+| Available   | Publicly released                      |
+| Maintenance | Stability and compatibility updates    |
+| Archived    | No active development                  |
+
 
 Each project documents its own development status.
 
