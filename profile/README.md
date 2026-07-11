@@ -16,13 +16,18 @@ technical productivity, automation, CAD workflows, and industrial solutions.
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Website-Megiddo%20Source-gold?style=for-the-badge)](https://megidddosource.netlify.app)
+<div align="center">
 
-[![Projects](https://img.shields.io/badge/Projects-Catalog-blue?style=for-the-badge)](https://megidddosource.netlify.app/apps/)
+[![Website](https://img.shields.io/badge/Website-Megiddo%20Source-gold?style=for-the-badge)](https://megiddosource.netlify.app)
+[![Projects](https://img.shields.io/badge/Projects-Catalog-blue?style=for-the-badge)](https://megiddosource.netlify.app/apps/)
+[![Nexus ERP](https://img.shields.io/badge/Nexus-ERP%20Industrial-orange?style=for-the-badge)](https://megiddosource.netlify.app/ecosystem.html)
+[![Downloads](https://img.shields.io/badge/Downloads-Official-green?style=for-the-badge)](https://megiddosource.netlify.app/downloads.html)
 
-[![Nexus ERP](https://img.shields.io/badge/Nexus-ERP%20Industrial-orange?style=for-the-badge)](https://megidddosource.netlify.app/ecosystem.html)
+[![Gumroad](https://img.shields.io/badge/Gumroad-Support%20Projects-ff90e8?style=for-the-badge)](https://megiddosource.gumroad.com/)
+[![Reddit](https://img.shields.io/badge/Reddit-Community-ff4500?style=for-the-badge)](https://www.reddit.com/user/MegiddoSource/)
+[![Contact](https://img.shields.io/badge/Contact-Email-4caf50?style=for-the-badge)](mailto:l.megiddo.source@gmail.com)
 
-[![Downloads](https://img.shields.io/badge/Downloads-Official-green?style=for-the-badge)](https://megidddosource.netlify.app/downloads.html)
+</div>
 
 </div>
 </div>
