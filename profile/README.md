@@ -14,8 +14,17 @@
 Megiddo Source develops independent software projects focused on local-first computing,
 technical productivity, automation, CAD workflows, and industrial solutions.
 
-🌐 Website • 📦 Projects • 🏭 Nexus ERP Industrial • ⬇️ Downloads
+<div align="center">
 
+[![Website](https://img.shields.io/badge/Website-Megiddo%20Source-gold?style=for-the-badge)](https://megidddosource.netlify.app)
+
+[![Projects](https://img.shields.io/badge/Projects-Catalog-blue?style=for-the-badge)](https://megidddosource.netlify.app/apps/)
+
+[![Nexus ERP](https://img.shields.io/badge/Nexus-ERP%20Industrial-orange?style=for-the-badge)](https://megidddosource.netlify.app/ecosystem.html)
+
+[![Downloads](https://img.shields.io/badge/Downloads-Official-green?style=for-the-badge)](https://megidddosource.netlify.app/downloads.html)
+
+</div>
 </div>
 
 ---
